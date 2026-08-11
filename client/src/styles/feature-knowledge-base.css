@@ -18,11 +18,11 @@
   padding: 26px;
   overflow: hidden;
   background:
-    radial-gradient(circle at 92% 8%, rgba(33, 116, 253, 0.1), transparent 28%),
+    radial-gradient(circle at 92% 8%, rgba(228, 0, 43, 0.1), transparent 28%),
     #ffffff;
-  border: 1px solid rgba(228, 233, 240, 0.92);
+  border: 1px solid rgba(216, 216, 216, 0.92);
   border-radius: 24px;
-  box-shadow: 0 28px 72px rgba(23, 32, 51, 0.16);
+  box-shadow: 0 28px 72px rgba(17, 17, 17, 0.16);
   transform: translate(-50%, -50%);
 }
 
@@ -62,8 +62,8 @@
 }
 
 .knowledge-migration-lead {
-  background: rgba(33, 116, 253, 0.07);
-  border: 1px solid rgba(33, 116, 253, 0.13);
+  background: rgba(228, 0, 43, 0.07);
+  border: 1px solid rgba(228, 0, 43, 0.13);
 }
 
 .knowledge-migration-warning {
@@ -100,7 +100,7 @@
   gap: 7px;
   min-width: 0;
   padding: 14px;
-  background: rgba(248, 250, 253, 0.92);
+  background: rgba(247, 247, 248, 0.92);
   border: 1px solid var(--yb-border-soft);
   border-radius: 16px;
 }
@@ -123,7 +123,7 @@
 }
 
 .knowledge-migration-stats > div.is-warning strong {
-  color: #c83220;
+  color: #E4002B;
 }
 
 .knowledge-migration-actions {
@@ -140,7 +140,7 @@
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--yb-border-soft);
   border-radius: 18px;
-  box-shadow: 0 10px 28px rgba(33, 116, 253, 0.08);
+  box-shadow: 0 10px 28px rgba(228, 0, 43, 0.08);
 }
 
 .knowledge-breadcrumb {
@@ -176,7 +176,7 @@
   color: #ffffff;
   background: linear-gradient(135deg, var(--yb-primary), var(--yb-violet));
   border-color: transparent;
-  box-shadow: 0 10px 24px rgba(33, 116, 253, 0.16);
+  box-shadow: 0 10px 24px rgba(228, 0, 43, 0.16);
 }
 
 .knowledge-create-folder-bar {
@@ -187,7 +187,7 @@
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--yb-border-soft);
   border-radius: 16px;
-  box-shadow: 0 10px 28px rgba(33, 116, 253, 0.08);
+  box-shadow: 0 10px 28px rgba(228, 0, 43, 0.08);
 }
 
 .knowledge-create-folder-bar input {
@@ -204,8 +204,8 @@
 }
 
 .knowledge-create-folder-bar input:focus {
-  border-color: rgba(33, 116, 253, 0.5);
-  box-shadow: 0 0 0 3px rgba(33, 116, 253, 0.1);
+  border-color: rgba(228, 0, 43, 0.5);
+  box-shadow: 0 0 0 3px rgba(228, 0, 43, 0.1);
 }
 
 .knowledge-layout {
@@ -288,9 +288,9 @@
 }
 
 .knowledge-folder-card.is-drop-target {
-  background: rgba(33, 116, 253, 0.14);
-  border-color: rgba(33, 116, 253, 0.48);
-  box-shadow: 0 12px 28px rgba(33, 116, 253, 0.16);
+  background: rgba(228, 0, 43, 0.14);
+  border-color: rgba(228, 0, 43, 0.48);
+  box-shadow: 0 12px 28px rgba(228, 0, 43, 0.16);
 }
 
 .knowledge-folder-row,
@@ -321,8 +321,8 @@
 
 .knowledge-drag-handle:hover {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
-  border-color: rgba(33, 116, 253, 0.18);
+  background: rgba(228, 0, 43, 0.1);
+  border-color: rgba(228, 0, 43, 0.18);
 }
 
 .knowledge-drag-handle[draggable="false"] {
@@ -346,13 +346,13 @@
 }
 
 .knowledge-folder-card.is-active {
-  background: rgba(33, 116, 253, 0.1);
-  border-color: rgba(33, 116, 253, 0.35);
+  background: rgba(228, 0, 43, 0.1);
+  border-color: rgba(228, 0, 43, 0.35);
 }
 
 .knowledge-folder-card:hover:not(.is-active):not(.is-dragging) {
   background: #ffffff;
-  border-color: rgba(33, 116, 253, 0.18);
+  border-color: rgba(228, 0, 43, 0.18);
   box-shadow: var(--yb-shadow-sm);
 }
 
@@ -364,7 +364,7 @@
   height: 34px;
   color: var(--yb-primary);
   font-weight: 800;
-  background: rgba(33, 116, 253, 0.12);
+  background: rgba(228, 0, 43, 0.12);
   border-radius: 10px;
 }
 
@@ -386,8 +386,8 @@
 }
 
 .knowledge-folder-actions button:hover:not(:disabled) {
-  background: rgba(33, 116, 253, 0.08);
-  border-color: rgba(33, 116, 253, 0.2);
+  background: rgba(228, 0, 43, 0.08);
+  border-color: rgba(228, 0, 43, 0.2);
 }
 
 .knowledge-folder-card strong,
@@ -439,7 +439,7 @@
 
 .knowledge-document-card:hover:not(.is-dragging) {
   background: #ffffff;
-  border-color: rgba(33, 116, 253, 0.16);
+  border-color: rgba(228, 0, 43, 0.16);
   box-shadow: var(--yb-shadow-sm);
 }
 
@@ -450,9 +450,9 @@
   left: 14px;
   height: 3px;
   content: '';
-  background: linear-gradient(90deg, var(--yb-primary), #7c3aed);
+  background: linear-gradient(90deg, var(--yb-primary), #FF4F00);
   border-radius: 999px;
-  box-shadow: 0 0 0 4px rgba(33, 116, 253, 0.12);
+  box-shadow: 0 0 0 4px rgba(228, 0, 43, 0.12);
 }
 
 .knowledge-document-card.is-drop-before::before {
@@ -507,20 +507,20 @@
 .knowledge-status.is-ready_for_matching,
 .knowledge-status.is-saving {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.12);
+  background: rgba(228, 0, 43, 0.12);
 }
 
 .knowledge-progress-track {
   height: 8px;
   overflow: hidden;
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
   border-radius: 999px;
 }
 
 .knowledge-progress-track span {
   display: block;
   height: 100%;
-  background: linear-gradient(90deg, var(--yb-primary), #60a5fa);
+  background: linear-gradient(90deg, var(--yb-primary), #FF4F00);
   border-radius: inherit;
   transition: width 0.2s ease;
 }
@@ -546,8 +546,8 @@
 
 .knowledge-document-actions button:hover:not(:disabled) {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.06);
-  border-color: rgba(33, 116, 253, 0.2);
+  background: rgba(228, 0, 43, 0.06);
+  border-color: rgba(228, 0, 43, 0.2);
 }
 
 .knowledge-document-actions button:disabled {
@@ -584,8 +584,8 @@
   color: var(--yb-primary);
   font-size: 13px;
   font-weight: 800;
-  background: rgba(33, 116, 253, 0.08);
-  border: 1px solid rgba(33, 116, 253, 0.16);
+  background: rgba(228, 0, 43, 0.08);
+  border: 1px solid rgba(228, 0, 43, 0.16);
   border-radius: 10px;
   cursor: pointer;
   user-select: none;
@@ -593,7 +593,7 @@
 }
 
 .knowledge-item-source-action:hover {
-  background: rgba(33, 116, 253, 0.12);
+  background: rgba(228, 0, 43, 0.12);
 }
 
 .knowledge-item-content {
@@ -639,7 +639,7 @@
   width: min(1040px, calc(100vw - 48px));
   height: min(820px, calc(100vh - 48px));
   background: #ffffff;
-  border: 1px solid rgba(228, 233, 240, 0.9);
+  border: 1px solid rgba(216, 216, 216, 0.9);
   border-radius: 22px;
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.26);
   transform: translate(-50%, -50%);
@@ -724,7 +724,7 @@
 }
 
 .knowledge-item-content th {
-  background: #f1f6ff;
+  background: #F7F7F8;
 }
 
 .knowledge-item-card pre {
@@ -863,7 +863,7 @@
 .knowledge-analysis-report span {
   padding: 6px 10px;
   font-size: 12px;
-  background: rgba(33, 116, 253, 0.08);
+  background: rgba(228, 0, 43, 0.08);
   border-radius: 999px;
 }
 
@@ -894,10 +894,10 @@
 .knowledge-analysis-debug-log code {
   overflow: hidden;
   padding: 5px 8px;
-  color: #155bd7;
+  color: #C40025;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: rgba(33, 116, 253, 0.08);
+  background: rgba(228, 0, 43, 0.08);
   border-radius: 8px;
 }
 

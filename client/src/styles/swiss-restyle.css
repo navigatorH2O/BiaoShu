@@ -1,0 +1,235 @@
+/* Swiss restyle: applied last so the anchor tokens override legacy gradients and rounded chrome. */
+:root {
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+}
+
+.app-shell {
+  background: #F7F7F8;
+}
+
+.sidebar {
+  background: #FFFFFF;
+  border-right: 1px solid #E3E3E3;
+  box-shadow: none;
+}
+
+.sidebar-surface {
+  display: none;
+}
+
+.brand-block {
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.brand-copy span,
+.section-kicker,
+.secondary-menu-list-head span,
+.secondary-menu-row-copy strong,
+.panel h3,
+.empty-panel h3 {
+  letter-spacing: 0;
+}
+
+.brand-copy span {
+  color: #4A4A4A;
+}
+
+.collapse-button {
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.nav-item,
+.settings-trigger {
+  border-radius: 4px;
+}
+
+.nav-item:hover,
+.settings-trigger:hover {
+  color: var(--yb-primary);
+  background: #F7F7F8;
+  border-color: #E3E3E3;
+  transform: none;
+}
+
+.nav-item.is-active,
+.settings-trigger.is-active {
+  color: #FFFFFF;
+  background: var(--yb-primary);
+  border-color: var(--yb-primary);
+  box-shadow: none;
+}
+
+.nav-icon {
+  border-radius: 4px;
+  background: transparent;
+  border-color: transparent;
+}
+
+.nav-item.is-active .nav-icon,
+.settings-trigger.is-active .nav-icon {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.24);
+}
+
+.agent-runtime-status-bar {
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.agent-runtime-status-meta em {
+  color: #4A4A4A;
+  background: #F2F2F2;
+  border-radius: 4px;
+}
+
+.floating-toolbar {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+  box-shadow: var(--yb-shadow-sm);
+}
+
+.floating-toolbar-button {
+  border-radius: 6px;
+}
+
+.floating-toolbar-button:hover:not(:disabled) {
+  color: var(--yb-primary);
+  background: #F7F7F8;
+  border-color: #E3E3E3;
+  transform: none;
+}
+
+.floating-toolbar-button.is-primary {
+  background: var(--yb-primary);
+  border-color: var(--yb-primary);
+  box-shadow: none;
+}
+
+.floating-toolbar-button.is-primary:hover:not(:disabled) {
+  background: var(--yb-primary-hover);
+  border-color: var(--yb-primary-hover);
+}
+
+.panel,
+.empty-panel,
+.secondary-menu-list-panel {
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.primary-action,
+.secondary-action,
+.danger-action {
+  border-radius: 6px;
+}
+
+.primary-action {
+  background: var(--yb-primary);
+  box-shadow: none;
+}
+
+.primary-action:hover:not(:disabled) {
+  background: var(--yb-primary-hover);
+  box-shadow: none;
+  transform: none;
+}
+
+.primary-action:active:not(:disabled) {
+  background: var(--yb-primary-deep);
+  transform: none;
+}
+
+.secondary-action {
+  color: var(--yb-text);
+  background: #FFFFFF;
+  border: 1px solid #C9C9C9;
+}
+
+.secondary-action:hover:not(:disabled) {
+  color: var(--yb-text);
+  background: #F7F7F8;
+  border-color: #111111;
+  transform: none;
+}
+
+.secondary-menu-list-head {
+  background: #FFFFFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+}
+
+.secondary-menu-list-head::before {
+  width: 3px;
+  background: var(--yb-primary);
+  border-radius: 0;
+}
+
+.secondary-menu-list-head::after {
+  background: #E3E3E3;
+}
+
+.secondary-menu-list {
+  border: 1px solid #E3E3E3;
+  border-radius: 6px;
+}
+
+.secondary-menu-row {
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.secondary-menu-row::before {
+  width: 3px;
+  background: var(--yb-primary);
+  border-radius: 0;
+}
+
+.secondary-menu-row:hover {
+  background: #F7F7F8;
+}
+
+.secondary-menu-row-icon {
+  background: #F7F7F8;
+  border: 1px solid #E3E3E3;
+  border-radius: 4px;
+}
+
+.progress-track {
+  border-radius: 0;
+}
+
+.progress-track span {
+  background: var(--yb-primary);
+}
+
+.tooltip-content {
+  border-radius: 4px;
+}
+
+.tooltip-arrow {
+  fill: #111111;
+}
+
+/* Feature containers: keep the Swiss flat surface across the app. */
+[class$="-panel"],
+[class$="-card"] {
+  background-image: none;
+  background-color: #FFFFFF;
+  box-shadow: none;
+  border-radius: 8px;
+  border-color: #E3E3E3;
+}

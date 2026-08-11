@@ -39,7 +39,7 @@
   margin: 18px 0 0;
   overflow: auto;
   padding: 16px;
-  color: #243047;
+  color: #111111;
   white-space: pre-wrap;
   word-break: break-word;
   background: #f5f8ff;
@@ -149,8 +149,8 @@
 
 .developer-expansion-replace-field select:focus,
 .developer-expansion-replace-field textarea:focus {
-  border-color: rgba(33, 116, 253, 0.5);
-  box-shadow: 0 0 0 4px rgba(33, 116, 253, 0.1);
+  border-color: rgba(228, 0, 43, 0.5);
+  box-shadow: 0 0 0 4px rgba(228, 0, 43, 0.1);
 }
 
 .developer-expansion-replace-check {
@@ -216,7 +216,7 @@
   display: grid;
   gap: 6px;
   padding: 14px;
-  background: linear-gradient(135deg, rgba(248, 250, 253, 0.94), rgba(255, 255, 255, 0.98));
+  background: linear-gradient(135deg, rgba(247, 247, 248, 0.94), rgba(255, 255, 255, 0.98));
   border: 1px solid var(--yb-border-soft);
   border-radius: 18px;
 }
@@ -231,7 +231,7 @@
   margin: 16px 0 0;
   overflow: auto;
   padding: 16px;
-  color: #243047;
+  color: #111111;
   white-space: pre-wrap;
   word-break: break-word;
   background: #f8fafc;
@@ -277,7 +277,7 @@
   overflow: hidden;
   padding: 32px;
   background:
-    radial-gradient(circle at 86% 14%, rgba(91, 84, 211, 0.18), transparent 32%),
+    radial-gradient(circle at 86% 14%, rgba(255, 79, 0, 0.18), transparent 32%),
     linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(246, 249, 255, 0.94));
 }
 
@@ -290,7 +290,7 @@
   color: #ffffff;
   background: linear-gradient(150deg, var(--yb-primary-deep), var(--yb-violet));
   border-radius: 24px;
-  box-shadow: 0 24px 54px rgba(33, 116, 253, 0.22);
+  box-shadow: 0 24px 54px rgba(228, 0, 43, 0.22);
 }
 
 .developer-secondary-accent-card span,
@@ -327,7 +327,7 @@
 .developer-secondary-metrics article,
 .developer-secondary-steps article,
 .developer-secondary-preview-list span {
-  background: linear-gradient(135deg, rgba(248, 250, 253, 0.9), rgba(255, 255, 255, 0.98));
+  background: linear-gradient(135deg, rgba(247, 247, 248, 0.9), rgba(255, 255, 255, 0.98));
   border: 1px solid var(--yb-border-soft);
   border-radius: 20px;
 }
@@ -414,7 +414,7 @@
 .demo-panel,
 .demo-preview-card {
   background: rgba(255, 255, 255, 0.94);
-  border: 1px solid rgba(228, 233, 240, 0.88);
+  border: 1px solid rgba(216, 216, 216, 0.88);
   border-radius: 26px;
   box-shadow: var(--yb-shadow);
 }
@@ -428,20 +428,20 @@
   overflow: hidden;
   padding: 30px;
   background:
-    radial-gradient(circle at 88% 18%, rgba(33, 116, 253, 0.18), transparent 32%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(248, 250, 253, 0.92));
+    radial-gradient(circle at 88% 18%, rgba(228, 0, 43, 0.18), transparent 32%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.97), rgba(247, 247, 248, 0.92));
 }
 
 .business-bid-demo .demo-hero-card {
   background:
-    radial-gradient(circle at 88% 16%, rgba(91, 84, 211, 0.18), transparent 34%),
+    radial-gradient(circle at 88% 16%, rgba(255, 79, 0, 0.18), transparent 34%),
     linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(245, 248, 255, 0.94));
 }
 
 .opportunity-hero-card {
   background:
-    radial-gradient(circle at 88% 18%, rgba(64, 152, 252, 0.2), transparent 34%),
-    radial-gradient(circle at 24% 0%, rgba(91, 84, 211, 0.12), transparent 30%),
+    radial-gradient(circle at 88% 18%, rgba(255, 79, 0, 0.2), transparent 34%),
+    radial-gradient(circle at 24% 0%, rgba(255, 79, 0, 0.12), transparent 30%),
     linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(247, 251, 255, 0.94));
 }
 
@@ -501,15 +501,15 @@
 
 .demo-dev-badge {
   padding: 9px 13px;
-  color: #155bd7;
-  background: rgba(33, 116, 253, 0.1);
-  border: 1px solid rgba(33, 116, 253, 0.18);
+  color: #C40025;
+  background: rgba(228, 0, 43, 0.1);
+  border: 1px solid rgba(228, 0, 43, 0.18);
 }
 
 .demo-soft-pill {
   padding: 8px 12px;
   color: var(--yb-primary);
-  background: #f2f7ff;
+  background: #F2F2F2;
   border: 1px solid var(--yb-border-soft);
 }
 
@@ -522,7 +522,7 @@
 .demo-metric-stack article,
 .demo-signal-grid article {
   background: rgba(255, 255, 255, 0.88);
-  border: 1px solid rgba(33, 116, 253, 0.13);
+  border: 1px solid rgba(228, 0, 43, 0.13);
   border-radius: 22px;
 }
 
@@ -589,7 +589,7 @@
 .demo-step-list article,
 .demo-table-list article,
 .opportunity-card-list article {
-  background: linear-gradient(135deg, rgba(248, 250, 253, 0.9), rgba(255, 255, 255, 0.98));
+  background: linear-gradient(135deg, rgba(247, 247, 248, 0.9), rgba(255, 255, 255, 0.98));
   border: 1px solid var(--yb-border-soft);
   border-radius: 20px;
 }
@@ -647,7 +647,7 @@
 }
 
 .demo-status-pill.is-danger {
-  color: #c83220;
+  color: #E4002B;
   background: rgba(200, 50, 32, 0.09);
 }
 
@@ -662,7 +662,7 @@
   display: grid;
   gap: 10px;
   padding: 16px;
-  background: linear-gradient(180deg, #f8fafd, #ffffff);
+  background: linear-gradient(180deg, #F7F7F8, #ffffff);
   border: 1px solid var(--yb-border-soft);
   border-radius: 22px;
 }
@@ -683,9 +683,9 @@
   overflow: hidden;
   padding: 26px;
   text-align: center;
-  background: linear-gradient(145deg, rgba(23, 32, 51, 0.94), rgba(33, 116, 253, 0.72));
+  background: linear-gradient(145deg, rgba(17, 17, 17, 0.94), rgba(228, 0, 43, 0.72));
   border-radius: 26px;
-  box-shadow: 0 22px 54px rgba(33, 116, 253, 0.24);
+  box-shadow: 0 22px 54px rgba(228, 0, 43, 0.24);
 }
 
 .opportunity-radar-card span,
@@ -773,7 +773,7 @@
   position: relative;
   padding: 14px 16px 14px 42px;
   color: var(--yb-text-soft);
-  background: rgba(248, 250, 253, 0.9);
+  background: rgba(247, 247, 248, 0.9);
   border: 1px solid var(--yb-border-soft);
   border-radius: 18px;
 }
@@ -802,7 +802,7 @@ body.token-stats-transparent-root #root {
   height: 100vh;
   place-items: stretch;
   padding: 0;
-  color: #f7fbff;
+  color: #F7F7F8;
   background: transparent;
 }
 
@@ -814,8 +814,8 @@ body.token-stats-transparent-root #root {
   padding: 16px;
   overflow: hidden;
   background:
-    radial-gradient(circle at 14% 8%, rgba(102, 195, 255, 0.36), transparent 28%),
-    radial-gradient(circle at 86% 18%, rgba(150, 112, 255, 0.34), transparent 30%),
+    radial-gradient(circle at 14% 8%, rgba(255, 79, 0, 0.36), transparent 28%),
+    radial-gradient(circle at 86% 18%, rgba(255, 79, 0, 0.34), transparent 30%),
     linear-gradient(145deg, rgba(8, 17, 34, 0.76), rgba(10, 20, 42, 0.52));
   border: 1px solid rgba(210, 232, 255, 0.24);
   border-radius: 24px;
@@ -857,7 +857,7 @@ body.token-stats-transparent-root #root {
 .token-stats-actions button {
   height: 30px;
   padding: 0 10px;
-  color: #f7fbff;
+  color: #F7F7F8;
   font: inherit;
   font-size: 12px;
   font-weight: 700;

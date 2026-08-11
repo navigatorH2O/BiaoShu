@@ -18,7 +18,7 @@
 
 .settings-page-section {
   background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(228, 233, 240, 0.88);
+  border: 1px solid rgba(216, 216, 216, 0.88);
   border-radius: 24px;
   box-shadow: var(--yb-shadow);
 }
@@ -33,15 +33,15 @@
   padding: 10px;
   overflow-x: auto;
   background: rgba(255, 255, 255, 0.86);
-  border: 1px solid rgba(228, 233, 240, 0.8);
+  border: 1px solid rgba(216, 216, 216, 0.8);
   border-radius: 999px;
-  box-shadow: 0 18px 44px rgba(23, 32, 51, 0.05);
+  box-shadow: 0 18px 44px rgba(17, 17, 17, 0.05);
 }
 
 .settings-tab {
   min-width: 92px;
   padding: 14px 18px;
-  color: #364153;
+  color: #111111;
   font-weight: 800;
   background: transparent;
   border: 0;
@@ -52,12 +52,12 @@
 
 .settings-tab.is-active {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.12);
+  background: rgba(228, 0, 43, 0.12);
 }
 
 .settings-tab:hover:not(.is-active) {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.06);
+  background: rgba(228, 0, 43, 0.06);
 }
 
 /* [8971-8973] (rewritten) settings-page-section second decl (overflow hidden) */
@@ -133,7 +133,7 @@ fieldset.settings-list {
   color: var(--yb-text);
   font-size: 13px;
   background-color: #eef3fa;
-  border: 1px solid #ccd6e3;
+  border: 1px solid #D8D8D8;
   border-radius: 12px;
   outline: none;
 }
@@ -204,9 +204,9 @@ fieldset.settings-list {
   overflow: auto;
   padding: 6px;
   background: #ffffff;
-  border: 1px solid #ccd6e3;
+  border: 1px solid #D8D8D8;
   border-radius: 14px;
-  box-shadow: 0 18px 44px rgba(23, 32, 51, 0.1);
+  box-shadow: 0 18px 44px rgba(17, 17, 17, 0.1);
 }
 
 .font-picker-summary {
@@ -236,8 +236,8 @@ fieldset.settings-list {
 
 .font-picker-option:hover,
 .font-picker-option.is-selected {
-  color: #155bd7;
-  background: rgba(33, 116, 253, 0.1);
+  color: #C40025;
+  background: rgba(228, 0, 43, 0.1);
 }
 
 .font-picker-empty {
@@ -274,15 +274,15 @@ fieldset.settings-list {
 .export-bullet-option:hover,
 .export-bullet-option.is-active {
   background: #ffffff;
-  border-color: #155bd7;
-  box-shadow: 0 0 0 3px rgba(33, 116, 253, 0.14);
+  border-color: #C40025;
+  box-shadow: 0 0 0 3px rgba(228, 0, 43, 0.14);
 }
 
 .settings-row input:focus,
 .settings-row select:focus {
   background-color: #ffffff;
-  border-color: rgba(33, 116, 253, 0.58);
-  box-shadow: 0 0 0 4px rgba(33, 116, 253, 0.12);
+  border-color: rgba(228, 0, 43, 0.58);
+  box-shadow: 0 0 0 4px rgba(228, 0, 43, 0.12);
 }
 
 .input-with-action {
@@ -292,7 +292,7 @@ fieldset.settings-list {
   grid-template-columns: minmax(0, 1fr) auto;
   overflow: hidden;
   background: #eef3fa;
-  border: 1px solid #ccd6e3;
+  border: 1px solid #D8D8D8;
   border-radius: 12px;
 }
 
@@ -302,8 +302,8 @@ fieldset.settings-list {
 
 .input-with-action:focus-within {
   background: #ffffff;
-  border-color: rgba(33, 116, 253, 0.58);
-  box-shadow: 0 0 0 4px rgba(33, 116, 253, 0.12);
+  border-color: rgba(228, 0, 43, 0.58);
+  box-shadow: 0 0 0 4px rgba(228, 0, 43, 0.12);
 }
 
 .settings-row .input-with-action input {
@@ -328,7 +328,7 @@ fieldset.settings-list {
   white-space: nowrap;
   background: rgba(255, 255, 255, 0.48);
   border: 0;
-  border-left: 1px solid #ccd6e3;
+  border-left: 1px solid #D8D8D8;
 }
 
 .input-with-action-icon-button {
@@ -341,13 +341,13 @@ fieldset.settings-list {
   color: #627189;
   background: rgba(255, 255, 255, 0.28);
   border: 0;
-  border-left: 1px solid #ccd6e3;
+  border-left: 1px solid #D8D8D8;
 }
 
 .input-with-action-icon-button:hover:not(:disabled),
 .input-with-action-icon-button[aria-pressed="true"]:not(:disabled) {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
 }
 
 .input-with-action-icon-button:disabled {
@@ -367,7 +367,7 @@ fieldset.settings-list {
 
 .input-with-action-button:hover:not(:disabled) {
   color: var(--yb-primary-deep);
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
 }
 
 .input-with-action-button:disabled {
@@ -376,7 +376,7 @@ fieldset.settings-list {
 }
 
 .settings-row select:disabled {
-  color: #536176;
+  color: #4A4A4A;
   opacity: 1;
 }
 
@@ -405,8 +405,8 @@ fieldset.settings-list {
   color: var(--yb-primary);
   font-size: 13px;
   font-weight: 800;
-  background: rgba(33, 116, 253, 0.1);
-  border: 1px solid rgba(33, 116, 253, 0.16);
+  background: rgba(228, 0, 43, 0.1);
+  border: 1px solid rgba(228, 0, 43, 0.16);
   border-radius: 12px;
 }
 
@@ -418,7 +418,7 @@ fieldset.settings-list {
 .inline-spinner {
   width: 15px;
   height: 15px;
-  border: 2px solid rgba(33, 116, 253, 0.22);
+  border: 2px solid rgba(228, 0, 43, 0.22);
   border-top-color: var(--yb-primary);
   border-radius: 999px;
   animation: yb-spin 780ms linear infinite;
@@ -469,8 +469,8 @@ fieldset.settings-list {
 }
 
 .image-model-status.is-untested em {
-  color: #536176;
-  background: #f2f5f9;
+  color: #4A4A4A;
+  background: #F2F2F2;
 }
 
 .image-model-status.is-available em {
@@ -479,7 +479,7 @@ fieldset.settings-list {
 }
 
 .image-model-status.is-unavailable em {
-  color: #c83220;
+  color: #E4002B;
   background: rgba(200, 50, 32, 0.1);
 }
 
@@ -521,13 +521,13 @@ fieldset.settings-list {
 }
 
 .agent-self-check-status.is-untested em {
-  color: #536176;
-  background: #f2f5f9;
+  color: #4A4A4A;
+  background: #F2F2F2;
 }
 
 .agent-self-check-status.is-checking em {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
 }
 
 .agent-self-check-status.is-normal em {
@@ -541,7 +541,7 @@ fieldset.settings-list {
 }
 
 .agent-self-check-status.is-error em {
-  color: #c83220;
+  color: #E4002B;
   background: rgba(200, 50, 32, 0.1);
 }
 
@@ -611,7 +611,7 @@ fieldset.settings-list {
   gap: 6px;
   min-width: 0;
   padding: 12px;
-  background: rgba(248, 250, 253, 0.84);
+  background: rgba(247, 247, 248, 0.84);
   border: 1px solid var(--yb-border-soft);
   border-radius: 16px;
   transition: background var(--yb-duration-fast) ease, border-color var(--yb-duration-fast) ease, box-shadow var(--yb-duration-fast) ease, color var(--yb-duration-fast) ease, transform var(--yb-duration-fast) ease;
@@ -648,14 +648,14 @@ fieldset.settings-list {
 }
 
 .agent-self-check-step.is-running {
-  border-color: rgba(33, 116, 253, 0.24);
+  border-color: rgba(228, 0, 43, 0.24);
 }
 
 .agent-isolation-check {
   display: grid;
   gap: 12px;
   padding: 14px;
-  background: rgba(248, 250, 253, 0.84);
+  background: rgba(247, 247, 248, 0.84);
   border: 1px solid var(--yb-border-soft);
   border-radius: 16px;
 }
@@ -669,7 +669,7 @@ fieldset.settings-list {
 }
 
 .agent-isolation-check.is-running {
-  border-color: rgba(33, 116, 253, 0.24);
+  border-color: rgba(228, 0, 43, 0.24);
 }
 
 .agent-isolation-check.is-error {
@@ -724,11 +724,11 @@ fieldset.settings-list {
 
 .agent-isolation-check.is-running .agent-isolation-check-head em {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
 }
 
 .agent-isolation-check.is-error .agent-isolation-check-head em {
-  color: #c83220;
+  color: #E4002B;
   background: rgba(200, 50, 32, 0.1);
 }
 
@@ -789,7 +789,7 @@ fieldset.settings-list {
   font-size: 11px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  background: rgba(33, 116, 253, 0.06);
+  background: rgba(228, 0, 43, 0.06);
   border-radius: 8px;
 }
 
@@ -803,7 +803,7 @@ fieldset.settings-list {
   gap: 4px;
   margin: 0;
   padding-left: 20px;
-  color: #c83220;
+  color: #E4002B;
   font-size: 12px;
   line-height: 1.5;
   overflow-wrap: anywhere;
@@ -842,7 +842,7 @@ fieldset.settings-list {
   gap: 6px;
   min-width: 0;
   padding: 12px;
-  background: rgba(248, 250, 253, 0.84);
+  background: rgba(247, 247, 248, 0.84);
   border: 1px solid var(--yb-border-soft);
   border-radius: 16px;
 }
@@ -895,7 +895,7 @@ fieldset.settings-list {
 .agent-tool-check-item.is-pending em,
 .agent-tool-check-item.is-running em {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
 }
 
 .agent-tool-check-item.is-warning {
@@ -912,7 +912,7 @@ fieldset.settings-list {
 }
 
 .agent-tool-check-item.is-error em {
-  color: #c83220;
+  color: #E4002B;
   background: rgba(200, 50, 32, 0.1);
 }
 
@@ -921,7 +921,7 @@ fieldset.settings-list {
   margin: 0;
   padding: 16px;
   overflow: auto;
-  color: #243047;
+  color: #111111;
   font-size: 12px;
   line-height: 1.6;
   white-space: pre-wrap;
@@ -938,7 +938,7 @@ fieldset.settings-list {
   gap: 14px;
   margin: 0 24px 20px;
   padding: 14px;
-  background: rgba(248, 250, 253, 0.86);
+  background: rgba(247, 247, 248, 0.86);
   border: 1px solid var(--yb-border-soft);
   border-radius: 18px;
 }
@@ -985,8 +985,8 @@ fieldset.settings-list {
   color: var(--yb-text-soft);
   font-size: 13px;
   line-height: 1.55;
-  background: rgba(33, 116, 253, 0.06);
-  border: 1px solid rgba(33, 116, 253, 0.12);
+  background: rgba(228, 0, 43, 0.06);
+  border: 1px solid rgba(228, 0, 43, 0.12);
   border-radius: 12px;
 }
 
@@ -1021,7 +1021,7 @@ fieldset.settings-list {
 }
 
 .parser-help-table thead th {
-  background: rgba(248, 250, 253, 0.95);
+  background: rgba(247, 247, 248, 0.95);
   color: var(--yb-text);
   font-weight: 700;
 }
@@ -1031,7 +1031,7 @@ fieldset.settings-list {
   width: 72px;
   color: var(--yb-text-muted);
   font-weight: 700;
-  background: rgba(248, 250, 253, 0.7);
+  background: rgba(247, 247, 248, 0.7);
   white-space: nowrap;
 }
 
@@ -1049,17 +1049,17 @@ fieldset.settings-list {
   color: var(--yb-primary);
   font-size: 11px;
   font-weight: 800;
-  background: rgba(33, 116, 253, 0.1);
-  border: 1px solid rgba(33, 116, 253, 0.14);
+  background: rgba(228, 0, 43, 0.1);
+  border: 1px solid rgba(228, 0, 43, 0.14);
   border-radius: 999px;
 }
 
 .parser-help-table thead .parser-help-col-primary {
-  background: linear-gradient(180deg, rgba(33, 116, 253, 0.12) 0%, rgba(248, 250, 253, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(228, 0, 43, 0.12) 0%, rgba(247, 247, 248, 0.95) 100%);
 }
 
 .parser-help-table thead .parser-help-col-accent {
-  background: linear-gradient(180deg, rgba(91, 84, 211, 0.1) 0%, rgba(248, 250, 253, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(255, 79, 0, 0.1) 0%, rgba(247, 247, 248, 0.95) 100%);
 }
 
 .parser-help-table thead .parser-help-col-muted {
@@ -1078,7 +1078,7 @@ fieldset.settings-list {
 }
 
 .parser-help-table tbody tr:nth-child(even) td {
-  background: rgba(248, 250, 253, 0.45);
+  background: rgba(247, 247, 248, 0.45);
 }
 
 /* [9748-9981] about-*-/privacy-* (关于/隐私声明) */
@@ -1100,14 +1100,14 @@ fieldset.settings-list {
   background: var(--yb-bg);
   border: 1px solid var(--yb-border-soft);
   border-radius: 20px;
-  box-shadow: 0 12px 28px rgba(33, 116, 253, 0.06);
+  box-shadow: 0 12px 28px rgba(228, 0, 43, 0.06);
 }
 
 .about-update-card {
   align-content: start;
   background:
-    radial-gradient(circle at top right, rgba(33, 116, 253, 0.16), transparent 42%),
-    linear-gradient(135deg, #ffffff, #f7fbff);
+    radial-gradient(circle at top right, rgba(228, 0, 43, 0.16), transparent 42%),
+    linear-gradient(135deg, #ffffff, #F7F7F8);
 }
 
 .about-card-head,
@@ -1127,8 +1127,8 @@ fieldset.settings-list {
   color: var(--yb-primary);
   font-size: 12px;
   font-weight: 800;
-  background: rgba(33, 116, 253, 0.08);
-  border: 1px solid rgba(33, 116, 253, 0.12);
+  background: rgba(228, 0, 43, 0.08);
+  border: 1px solid rgba(228, 0, 43, 0.12);
   border-radius: 999px;
 }
 
@@ -1214,7 +1214,7 @@ fieldset.settings-list {
 }
 
 .about-links-activate:hover {
-  border-color: rgba(33, 116, 253, 0.28);
+  border-color: rgba(228, 0, 43, 0.28);
   transform: translateY(-1px);
 }
 
@@ -1250,11 +1250,11 @@ fieldset.settings-list {
   padding: 18px;
   color: var(--yb-text-soft);
   background:
-    radial-gradient(circle at top left, rgba(33, 116, 253, 0.14), transparent 36%),
+    radial-gradient(circle at top left, rgba(228, 0, 43, 0.14), transparent 36%),
     linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(248, 251, 255, 0.92));
-  border: 1px solid rgba(33, 116, 253, 0.16);
+  border: 1px solid rgba(228, 0, 43, 0.16);
   border-radius: 18px;
-  box-shadow: 0 12px 28px rgba(33, 116, 253, 0.07);
+  box-shadow: 0 12px 28px rgba(228, 0, 43, 0.07);
 }
 
 .privacy-statement-head {
@@ -1270,8 +1270,8 @@ fieldset.settings-list {
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  background: rgba(33, 116, 253, 0.1);
-  border: 1px solid rgba(33, 116, 253, 0.16);
+  background: rgba(228, 0, 43, 0.1);
+  border: 1px solid rgba(228, 0, 43, 0.16);
   border-radius: 999px;
 }
 
@@ -1298,7 +1298,7 @@ fieldset.settings-list {
   gap: 10px;
   padding: 16px;
   background: rgba(255, 255, 255, 0.86);
-  border: 1px solid rgba(33, 116, 253, 0.12);
+  border: 1px solid rgba(228, 0, 43, 0.12);
   border-radius: 18px;
 }
 

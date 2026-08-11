@@ -15,7 +15,7 @@
 .rejection-reader-card,
 .rejection-result-command-bar {
   background: rgba(255, 255, 255, 0.94);
-  border: 1px solid rgba(228, 233, 240, 0.88);
+  border: 1px solid rgba(216, 216, 216, 0.88);
   border-radius: 26px;
   box-shadow: var(--yb-shadow);
 }
@@ -56,7 +56,7 @@
   align-items: center;
   gap: 16px;
   padding: 14px 18px 14px 22px;
-  background: linear-gradient(135deg, rgba(248, 250, 253, 0.86), rgba(255, 255, 255, 0.98));
+  background: linear-gradient(135deg, rgba(247, 247, 248, 0.86), rgba(255, 255, 255, 0.98));
   border: 1px solid var(--yb-border-soft);
   border-radius: 22px;
 }
@@ -101,8 +101,8 @@
   align-content: center;
   gap: 4px;
   padding: 10px 14px;
-  background: linear-gradient(90deg, rgba(33, 116, 253, 0.055), rgba(33, 116, 253, 0.012));
-  border: 1px solid rgba(33, 116, 253, 0.13);
+  background: linear-gradient(90deg, rgba(228, 0, 43, 0.055), rgba(228, 0, 43, 0.012));
+  border: 1px solid rgba(228, 0, 43, 0.13);
   border-radius: 16px;
 }
 
@@ -178,7 +178,7 @@
 
 .rejection-file-pill button {
   padding: 7px 10px;
-  color: #c83220;
+  color: #E4002B;
   font-weight: 700;
   background: rgba(200, 50, 32, 0.08);
   border: 0;
@@ -202,7 +202,7 @@
   color: var(--yb-primary);
   font-size: 12px;
   font-weight: 900;
-  background: rgba(33, 116, 253, 0.09);
+  background: rgba(228, 0, 43, 0.09);
   border-radius: 999px;
 }
 
@@ -227,7 +227,7 @@
   gap: 18px;
   padding: 22px 24px;
   background:
-    radial-gradient(circle at 90% 8%, rgba(91, 84, 211, 0.12), transparent 28%),
+    radial-gradient(circle at 90% 8%, rgba(255, 79, 0, 0.12), transparent 28%),
     rgba(255, 255, 255, 0.94);
 }
 
@@ -249,7 +249,7 @@
   min-width: 180px;
   gap: 4px;
   padding: 10px 14px;
-  background: rgba(248, 250, 253, 0.78);
+  background: rgba(247, 247, 248, 0.78);
   border: 1px solid var(--yb-border-soft);
   border-radius: 16px;
   transition: background var(--yb-duration-fast) ease, border-color var(--yb-duration-fast) ease, box-shadow var(--yb-duration-fast) ease, color var(--yb-duration-fast) ease, transform var(--yb-duration-fast) ease;
@@ -275,8 +275,8 @@
 }
 
 .rejection-result-status.is-running {
-  background: rgba(33, 116, 253, 0.08);
-  border-color: rgba(33, 116, 253, 0.18);
+  background: rgba(228, 0, 43, 0.08);
+  border-color: rgba(228, 0, 43, 0.18);
 }
 
 .rejection-result-status.is-success {
@@ -311,7 +311,7 @@
   gap: 18px;
   padding: 24px;
   background: rgba(255, 255, 255, 0.94);
-  border: 1px solid rgba(228, 233, 240, 0.88);
+  border: 1px solid rgba(216, 216, 216, 0.88);
   border-radius: 26px;
   box-shadow: var(--yb-shadow);
 }
@@ -353,11 +353,11 @@
 }
 
 .rejection-check-result-tab.is-active {
-  background: linear-gradient(180deg, rgba(33, 116, 253, 0.1), rgba(255, 255, 255, 0.95));
+  background: linear-gradient(180deg, rgba(228, 0, 43, 0.1), rgba(255, 255, 255, 0.95));
 }
 
 .rejection-check-result-tab:hover:not(.is-active) {
-  background: rgba(33, 116, 253, 0.04);
+  background: rgba(228, 0, 43, 0.04);
 }
 
 .rejection-check-result-tab strong {
@@ -375,7 +375,7 @@
 
 .rejection-check-result-tab.is-running em {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
 }
 
 .rejection-check-result-tab.is-success em {
@@ -401,7 +401,7 @@
   justify-content: center;
   overflow: auto;
   padding: 34px;
-  background: linear-gradient(180deg, rgba(248, 250, 253, 0.88), rgba(255, 255, 255, 0.98));
+  background: linear-gradient(180deg, rgba(247, 247, 248, 0.88), rgba(255, 255, 255, 0.98));
   border: 1px solid var(--yb-border-soft);
   border-radius: 26px;
 }
@@ -467,8 +467,8 @@
 
 .rejection-bid-result-filter button.is-active {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
-  border-color: rgba(33, 116, 253, 0.24);
+  background: rgba(228, 0, 43, 0.1);
+  border-color: rgba(228, 0, 43, 0.24);
 }
 
 .rejection-bid-result-filter span {
@@ -492,8 +492,8 @@
   gap: 12px;
   padding: 10px 12px;
   color: var(--yb-text-soft);
-  background: linear-gradient(90deg, rgba(33, 116, 253, 0.08), rgba(91, 84, 211, 0.04));
-  border: 1px solid rgba(33, 116, 253, 0.12);
+  background: linear-gradient(90deg, rgba(228, 0, 43, 0.08), rgba(255, 79, 0, 0.04));
+  border: 1px solid rgba(228, 0, 43, 0.12);
   border-radius: 16px;
 }
 
@@ -512,11 +512,11 @@
   background: rgba(255, 255, 255, 0.96);
   border: 1px solid rgba(27, 50, 92, 0.12);
   border-radius: 20px;
-  box-shadow: 0 14px 32px rgba(33, 116, 253, 0.08);
+  box-shadow: 0 14px 32px rgba(228, 0, 43, 0.08);
 }
 
 .rejection-finding-item.is-expanded {
-  border-color: rgba(33, 116, 253, 0.24);
+  border-color: rgba(228, 0, 43, 0.24);
 }
 
 .rejection-finding-row {
@@ -542,7 +542,7 @@
 }
 
 .rejection-finding-toggle:hover {
-  background: rgba(33, 116, 253, 0.06);
+  background: rgba(228, 0, 43, 0.06);
 }
 
 .rejection-finding-chevron {
@@ -554,7 +554,7 @@
   color: var(--yb-primary);
   font-size: 18px;
   font-weight: 900;
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
   border-radius: 999px;
 }
 
@@ -601,7 +601,7 @@
 
 .rejection-finding-file-tag {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
 }
 
 .rejection-finding-tag.is-invalidBid {
@@ -611,7 +611,7 @@
 
 .rejection-finding-tag.is-rejectionItem {
   color: #4f46b8;
-  background: rgba(91, 84, 211, 0.11);
+  background: rgba(255, 79, 0, 0.11);
 }
 
 .rejection-finding-tag.is-typo {
@@ -655,14 +655,14 @@
 }
 
 .rejection-finding-delete {
-  color: #c83220;
+  color: #E4002B;
   background: rgba(200, 50, 32, 0.08);
   transition: background var(--yb-duration-fast) ease, border-color var(--yb-duration-fast) ease, box-shadow var(--yb-duration-fast) ease, color var(--yb-duration-fast) ease, transform var(--yb-duration-fast) ease;
 }
 
 .rejection-finding-copy {
   color: var(--yb-primary);
-  background: rgba(33, 116, 253, 0.1);
+  background: rgba(228, 0, 43, 0.1);
   transition: background var(--yb-duration-fast) ease, border-color var(--yb-duration-fast) ease, box-shadow var(--yb-duration-fast) ease, color var(--yb-duration-fast) ease, transform var(--yb-duration-fast) ease;
 }
 
@@ -671,7 +671,7 @@
 }
 
 .rejection-finding-copy:hover {
-  background: rgba(33, 116, 253, 0.16);
+  background: rgba(228, 0, 43, 0.16);
 }
 
 .typo-finding-title {
@@ -714,7 +714,7 @@
   align-content: start;
   gap: 8px;
   padding: 14px;
-  background: linear-gradient(180deg, rgba(248, 250, 253, 0.92), rgba(255, 255, 255, 0.98));
+  background: linear-gradient(180deg, rgba(247, 247, 248, 0.92), rgba(255, 255, 255, 0.98));
   border: 1px solid var(--yb-border-soft);
   border-radius: 16px;
 }
