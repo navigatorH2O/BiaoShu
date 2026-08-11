@@ -1,5 +1,3 @@
-<img src="./screenshots/banner.webp" alt="标枢使用演示视频" width="100%">
-
 # 标枢 - AI智能标书写作助手
 
 <p align="center">
@@ -296,11 +294,6 @@ npm run dist:win
 - **问题反馈**: [GitHub Issues](https://github.com/navigatorH2O/BiaoShu/issues)
 - **邮箱联系**: 暂未开放
 
-    </td>
-    <td width="33%" valign="top">
-      <p>
-        <img src="./screenshots/企业微信.png" alt="企业微信二维码" width="180">
-      </p>
     </td>
   </tr>
 </table>

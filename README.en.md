@@ -1,5 +1,3 @@
-<img src="./screenshots/banner.webp" alt="Yibiao usage demo video" width="100%">
-
 # BiaoShu Bid Toolbox - AI Bid Proposal Writing Assistant
 
 <p align="center">
@@ -283,11 +281,6 @@ You may use, modify, distribute, and commercialize this project, but modified ve
 - **Feedback**: [GitHub Issues](https://github.com/navigatorH2O/BiaoShu/issues)
 - **Email**: Not available yet
 
-    </td>
-    <td width="33%" valign="top">
-      <p>
-        <img src="./screenshots/企业微信.png" alt="WeCom QR code" width="180">
-      </p>
     </td>
   </tr>
 </table>
