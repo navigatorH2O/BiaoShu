@@ -1,0 +1,11 @@
+{
+  "projectName": "biaoshu-client",
+  "appId": "com.biaoshu.bidtool",
+  "productName": "标枢",
+  "buildId": "development-build",
+  "gitCommitSha": "",
+  "builtAt": "",
+  "keyId": "development-build-key",
+  "algorithm": "ECDSA_P256_SHA256",
+  "signature": ""
+}
