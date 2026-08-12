@@ -4,6 +4,7 @@ const bridge = {
   appName: '标枢',
   platform: process.platform,
   getVersion: () => ipcRenderer.invoke('app:get-version'),
+  setZoomFactor: (factor) => ipcRenderer.invoke('app:set-zoom-factor', factor),
   getGpuHardwareAccelerationStatus: () => ipcRenderer.invoke('app:get-gpu-hardware-acceleration-status'),
   saveGpuHardwareAccelerationPreference: (enabled) => ipcRenderer.invoke('app:save-gpu-hardware-acceleration-preference', enabled),
   startGpuHardwareAccelerationTrial: () => ipcRenderer.invoke('app:start-gpu-hardware-acceleration-trial'),

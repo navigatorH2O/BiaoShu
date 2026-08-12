@@ -377,6 +377,7 @@ export interface YibiaoBridge {
   appName: string;
   platform: string;
   getVersion: () => Promise<string>;
+  setZoomFactor: (factor: number) => Promise<{ success: boolean }>;
   getGpuHardwareAccelerationStatus: () => Promise<GpuHardwareAccelerationStatus>;
   saveGpuHardwareAccelerationPreference: (enabled: boolean) => Promise<ConfigSaveResult & { enabled: boolean; configured: boolean; restartRequired: boolean }>;
   startGpuHardwareAccelerationTrial: () => Promise<{ success: boolean }>;
@@ -579,5 +580,4 @@ export interface AvailablePlugin {
     message: string;
   };
 }
-
 

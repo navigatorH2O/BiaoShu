@@ -351,6 +351,15 @@ function registerIpcHandlers({ app, mainWindow, checkAndDownloadUpdate, triggerU
   ipcMain.handle('app:get-version', () => app.getVersion());
   ipcMain.handle('required-online-services:get-status', () => getRequiredOnlineServiceStatus());
 
+  ipcMain.handle('app:set-zoom-factor', (event, factor) => {
+    const normalized = Number(factor);
+    if (!Number.isFinite(normalized) || normalized < 0.5 || normalized > 2) {
+      return { success: false };
+    }
+    event.sender.setZoomFactor(normalized);
+    return { success: true };
+  });
+
   ipcMain.handle('app:get-gpu-hardware-acceleration-status', () => {
     const config = configStore.load();
     return {

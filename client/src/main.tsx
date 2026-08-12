@@ -5,8 +5,11 @@ import AppProviders from './app/providers/AppProviders';
 import WorkspaceDatabaseGate from './app/WorkspaceDatabaseGate';
 import DeveloperTokenStatsWindow from './features/developer/pages/DeveloperTokenStatsWindow';
 import './styles.css';
+import { getFontScaleFactor, getStoredFontScalePreset } from './shared/fontScale';
 
 const windowMode = new URLSearchParams(window.location.search).get('window');
+const fontScalePreset = getStoredFontScalePreset();
+void window.yibiao?.setZoomFactor(getFontScaleFactor(fontScalePreset));
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>

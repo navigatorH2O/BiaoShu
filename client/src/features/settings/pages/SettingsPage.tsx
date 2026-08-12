@@ -1,9 +1,11 @@
 ﻿import { useEffect, useState } from 'react';
 import { trackConfigUsage } from '../../../shared/analytics/analytics';
+import { applyFontScalePreset, FONT_SCALE_OPTIONS, getStoredFontScalePreset } from '../../../shared/fontScale';
 import { DetailHelpLink, FloatingToolbar, InputWithAction, OfflineLicenseActivationDialog, useToast } from '../../../shared/ui';
 import { showUpdateReadyToast } from '../../../shared/updateToast';
 import type { FloatingToolbarGroup } from '../../../shared/ui';
 import type { AgentModeScenariosConfig, AgentRuntimeDescriptor, AgentSelfCheckResult, AgentSelfCheckStepStatus, AiRequestMode, ClientConfig, ComponentsConfig, ConfiguredTextModelProvider, FileParserProvider, ImageModelConfig, ImageModelProfiles, ImageModelProvider, ImageModelSize, ImageModelStatus, LicenseRuntimeStatus, TextModelConfig, TextModelProfiles, TextModelProvider, UpdateChannel } from '../../../shared/types';
+import type { FontScalePreset } from '../../../shared/fontScale';
 import type { SettingsPageState } from '../types';
 
 type SettingsTab = 'general' | 'text-model' | 'image-model' | 'components' | 'agent' | 'about';
@@ -561,6 +563,7 @@ interface SettingsPageProps {
 function SettingsPage({ onDeveloperModeChange }: SettingsPageProps) {
   const [state, setState] = useState<SettingsPageState>(initialState);
   const [activeTab, setActiveTab] = useState<SettingsTab>('general');
+  const [fontScalePreset, setFontScalePreset] = useState<FontScalePreset>(getStoredFontScalePreset);
   const [savedConfig, setSavedConfig] = useState<ClientConfig | null>(null);
   const [textModels, setTextModels] = useState<string[]>([]);
   const [reasoningEfforts, setReasoningEfforts] = useState<string[]>([]);
@@ -1558,6 +1561,36 @@ function SettingsPage({ onDeveloperModeChange }: SettingsPageProps) {
               <select value="classic" disabled>
                 <option value="classic">经典布局</option>
               </select>
+            </div>
+            <div className="settings-row">
+              <div className="settings-row-copy">
+                <strong>字体大小</strong>
+                <span>整体调整界面文字和控件的显示大小，调整后立即生效</span>
+              </div>
+              <div className="settings-font-scale-control">
+                <input
+                  type="range"
+                  min={0}
+                  max={FONT_SCALE_OPTIONS.length - 1}
+                  step={1}
+                  value={FONT_SCALE_OPTIONS.findIndex((option) => option.value === fontScalePreset)}
+                  onChange={(event) => {
+                    const option = FONT_SCALE_OPTIONS[Number(event.target.value)];
+                    if (option) {
+                      setFontScalePreset(option.value);
+                      applyFontScalePreset(option.value);
+                    }
+                  }}
+                  aria-label="字体大小"
+                />
+                <div className="settings-font-scale-labels">
+                  {FONT_SCALE_OPTIONS.map((option) => (
+                    <span key={option.value} className={option.value === fontScalePreset ? 'is-active' : ''}>
+                      {option.label}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
