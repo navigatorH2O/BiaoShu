@@ -101,7 +101,7 @@ If this project helps you, you can support ongoing maintenance and open-source d
 
 ### ⬇️ Download
 
-Download the latest release from [GitHub Releases](https://github.com/yibiaoai/yibiao-simple/releases), then run the installer or executable file.
+Download the latest release from [GitHub Releases](https://github.com/navigatorH2O/BiaoShu/releases), then run the installer or executable file.
 
 ### 🎬 Usage Demo
 
@@ -197,7 +197,7 @@ Yibiao Bid Toolbox/
 
 Contributions are welcome.
 
-1. **🐛 Bug Reports**: Report bugs in [Issues](https://github.com/yibiaoai/yibiao-simple/issues).
+1. **🐛 Bug Reports**: Report bugs in [Issues](https://github.com/navigatorH2O/BiaoShu/issues).
 2. **💡 Feature Requests**: Suggest new features and improvements.
 3. **🔧 Code Contributions**: Fork the repository and submit a pull request.
 4. **📖 Documentation**: Help improve documentation and usage guides.

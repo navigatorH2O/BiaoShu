@@ -106,12 +106,12 @@
 
 ### ⬇️ 下载方式
 
-从 [GitHub Releases](https://github.com/yibiaoai/yibiao-simple/releases) 下载最新版本，运行安装包或可执行文件即可启动。
+从 [GitHub Releases](https://github.com/navigatorH2O/BiaoShu/releases) 下载最新版本，运行安装包或可执行文件即可启动。
 
 ### 🎬 使用方式
 
 <a href="https://www.bilibili.com/video/BV1sC5i6SE74">
-  <img src="./screenshots/new_home.png" alt="易标使用演示视频" width="100%">
+  <img src="./screenshots/new_home.png" alt="标枢使用演示视频" width="100%">
 </a>
 
 [点击前往 Bilibili 观看使用演示视频](https://www.bilibili.com/video/BV1sC5i6SE74)
@@ -194,7 +194,7 @@ npm run dist:win
 ### 🏗️ 项目结构
 
 ```
-易标投标工具箱/
+标枢投标工具箱/
 ├── client/                    # 当前桌面客户端主体
 │   ├── electron/              # Main、Preload、IPC、本地服务
 │   ├── src/                   # Renderer 应用源码
@@ -212,7 +212,7 @@ npm run dist:win
 
 欢迎各种形式的贡献！
 
-1. **🐛 问题反馈**: 在 [Issues](https://github.com/yibiaoai/yibiao-simple/issues) 中报告bug
+1. **🐛 问题反馈**: 在 [Issues](https://github.com/navigatorH2O/BiaoShu/issues) 中报告bug
 2. **💡 功能建议**: 提出新功能需求和改进建议  
 3. **🔧 代码贡献**: Fork项目，提交Pull Request
 4. **📖 文档完善**: 帮助改进文档和使用说明

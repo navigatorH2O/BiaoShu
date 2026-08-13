@@ -10,7 +10,7 @@
 
 也接受批评和指正，欢迎讨论。
 
-易标投标工具箱，项目源码、提示词已在 GitHub 完全开源：https://github.com/FB208/OpenBidKit_Yibiao
+标枢投标工具箱，项目源码、提示词已在 GitHub 完全开源：https://github.com/navigatorH2O/BiaoShu
 
 ## 你不需要RAG
 
@@ -58,4 +58,3 @@
 | 分批匹配原文    | AI 判断每个条目对应哪些 block，只返回 block 范围 | 把真实原文挂回条目                        |
 | 遗漏 block 补漏 | 没有被匹配到的原文block，再让AI跑一遍            | 防止有价值原文没有进入任何条目            |
 | 保存最终条目    | 程序按 block ID 拼回原文内容                     | 最终知识条目 = 标题 + 使用方式 + 原文素材 |
-

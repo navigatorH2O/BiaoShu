@@ -576,7 +576,7 @@ function createLicenseService({ app, configStore }) {
       title: '选择离线授权文件',
       properties: ['openFile'],
       filters: [
-        { name: '易标离线授权文件', extensions: ['json', 'license', 'txt'] },
+        { name: '标枢离线授权文件', extensions: ['json', 'license', 'txt'] },
         { name: '所有文件', extensions: ['*'] },
       ],
     });

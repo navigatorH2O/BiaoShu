@@ -320,7 +320,7 @@ function createAgentService({ app, configStore, mainWindow, aiService, licenseSe
     const targetRuntimeId = normalizeAgentRuntimeId(runtimeId || getSelectedRuntimeId());
     if (payload.signal?.aborted) return Promise.reject(createAbortError(payload.signal));
     const taskId = payload.task_id || require('node:crypto').randomUUID();
-    const title = payload.title || '易标智能体任务';
+    const title = payload.title || '标枢智能体任务';
     return new Promise((resolve, reject) => {
       const entry = {
         runtimeId: targetRuntimeId,
