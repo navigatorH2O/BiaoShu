@@ -2,6 +2,7 @@ import type { AiHttpErrorPayload, ChatCompletionRequest, JsonCompletionRequest }
 import type { DuplicateCheckWorkspaceState, FileSelectionResult } from './bid';
 import type { ClientConfig, ConfigSaveResult, ImageModelTestResult, ModelInfoResult, ModelListResult, UpdateChannel } from './config';
 import type { KnowledgeAnalysisSnapshot, KnowledgeBaseEvent, KnowledgeBaseIndex, KnowledgeBaseIndexMutationResult, KnowledgeBaseMigrationResult, KnowledgeBaseMigrationStatus, KnowledgeBaseMutationResult, KnowledgeBaseRetryDocumentResult, KnowledgeBaseStartMatchingResult, KnowledgeBaseUploadResult, KnowledgeDocument, KnowledgeFolder, KnowledgeItem } from '../../features/knowledge-base/types';
+import type { DeliveryDocsImportResult, DeliveryDocsState, DeliveryDocumentType, DeliveryProjectContext } from '../../features/delivery-docs/types';
 import type { RejectionCheckWorkspaceState, RejectionDocumentRole } from '../../features/rejection-check/types';
 import type { BidAnalysisMode, BidAnalysisTaskState, BidSectionMode, ContentGenerationOptions, ContentGenerationPlanState, ContentGenerationProgressDetail, ContentGenerationRuntimeState, ContentGenerationSectionState, DetectedBidSection, GlobalFactGroupState, SaveOutlineRequest, TechnicalPlanState, TechnicalPlanStep, TechnicalPlanWorkflowKind } from '../../features/technical-plan/types';
 import type { ExportFormatConfig, ExportTemplateRecord } from './exportFormat';
@@ -529,6 +530,24 @@ export interface YibiaoBridge {
     openFile: (filePath: string) => Promise<{ success: boolean }>;
     onWordExportProgress: (callback: (event: WordExportProgressEvent) => void) => () => void;
   };
+  deliveryDocs: {
+    loadState: () => Promise<DeliveryDocsState>;
+    importProjects: () => Promise<DeliveryDocsImportResult>;
+    setActive: (projectId: string, docType: DeliveryDocumentType) => Promise<DeliveryDocsState>;
+    generateContext: (projectId: string) => Promise<DeliveryDocsState>;
+    saveContext: (projectId: string, context: DeliveryProjectContext) => Promise<DeliveryDocsState>;
+    confirmContext: (projectId: string) => Promise<DeliveryDocsState>;
+    generateOutline: (projectId: string, docType: DeliveryDocumentType) => Promise<DeliveryDocsState>;
+    saveOutline: (projectId: string, docType: DeliveryDocumentType, payload: { outline_data?: OutlineData | null; outline?: string }) => Promise<DeliveryDocsState>;
+    generateDocument: (projectId: string, docType: DeliveryDocumentType, options?: { autoExport?: boolean }) => Promise<DeliveryDocsState>;
+    skipDocument: (projectId: string, docType: DeliveryDocumentType) => Promise<DeliveryDocsState>;
+    readContent: (projectId: string, docType: DeliveryDocumentType) => Promise<string>;
+    selectOutputDir: (projectId: string) => Promise<DeliveryDocsState>;
+    exportDocument: (projectId: string, docType: DeliveryDocumentType, options?: { export_format?: ExportFormatConfig }) => Promise<DeliveryDocsState>;
+    openOutputFolder: (projectId: string) => Promise<{ success: boolean; message?: string }>;
+    clear: () => Promise<DeliveryDocsState>;
+    onEvent: (callback: (event: { state: DeliveryDocsState }) => void) => () => void;
+  };
   systemFonts: {
     list: () => Promise<string[]>;
   };
@@ -580,4 +599,3 @@ export interface AvailablePlugin {
     message: string;
   };
 }
-

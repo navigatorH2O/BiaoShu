@@ -185,6 +185,28 @@ const bridge = {
       return () => ipcRenderer.removeListener('export:word-progress', listener);
     },
   },
+  deliveryDocs: {
+    loadState: () => ipcRenderer.invoke('delivery-docs:load-state'),
+    importProjects: () => ipcRenderer.invoke('delivery-docs:import-projects'),
+    setActive: (projectId, docType) => ipcRenderer.invoke('delivery-docs:set-active', projectId, docType),
+    generateContext: (projectId) => ipcRenderer.invoke('delivery-docs:generate-context', projectId),
+    saveContext: (projectId, context) => ipcRenderer.invoke('delivery-docs:save-context', projectId, context),
+    confirmContext: (projectId) => ipcRenderer.invoke('delivery-docs:confirm-context', projectId),
+    generateOutline: (projectId, docType) => ipcRenderer.invoke('delivery-docs:generate-outline', projectId, docType),
+    saveOutline: (projectId, docType, outline) => ipcRenderer.invoke('delivery-docs:save-outline', projectId, docType, outline),
+    generateDocument: (projectId, docType, options) => ipcRenderer.invoke('delivery-docs:generate-document', projectId, docType, options),
+    skipDocument: (projectId, docType) => ipcRenderer.invoke('delivery-docs:skip-document', projectId, docType),
+    readContent: (projectId, docType) => ipcRenderer.invoke('delivery-docs:read-content', projectId, docType),
+    selectOutputDir: (projectId) => ipcRenderer.invoke('delivery-docs:select-output-dir', projectId),
+    exportDocument: (projectId, docType, options) => ipcRenderer.invoke('delivery-docs:export-document', projectId, docType, options),
+    openOutputFolder: (projectId) => ipcRenderer.invoke('delivery-docs:open-output-folder', projectId),
+    clear: () => ipcRenderer.invoke('delivery-docs:clear'),
+    onEvent: (callback) => {
+      const listener = (_event, payload) => callback(payload);
+      ipcRenderer.on('delivery-docs:event', listener);
+      return () => ipcRenderer.removeListener('delivery-docs:event', listener);
+    },
+  },
   systemFonts: {
     list: () => ipcRenderer.invoke('system-fonts:list'),
   },

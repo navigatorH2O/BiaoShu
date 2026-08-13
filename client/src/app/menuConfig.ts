@@ -105,6 +105,11 @@ export const appMenuItems: AppMenuItem[] = [
     notice: githubStarNotice,
   },
   {
+    id: 'delivery-docs',
+    label: '交付文档',
+    description: '批量生成项目交付文档',
+  },
+  {
     id: 'plugin-manager',
     label: '插件管理',
     description: '安装和管理插件，扩展软件功能',

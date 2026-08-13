@@ -16,6 +16,7 @@ import ResourcesPage from '../features/resources/pages/ResourcesPage';
 import PluginsPage from '../features/plugins/pages/PluginsPage';
 import SettingsPage from '../features/settings/pages/SettingsPage';
 import TechnicalPlanHome from '../features/technical-plan/pages/TechnicalPlanHome';
+import DeliveryDocsPage from '../features/delivery-docs/pages/DeliveryDocsPage';
 import SecondaryMenuPage from '../shared/ui/SecondaryMenuPage';
 
 interface AppRouterProps {
@@ -71,6 +72,8 @@ function AppRouter({ activeSection, developerMode, onDeveloperModeChange, onSect
       return <ExportFormatPage mode="create" />;
     case 'bid-opportunity':
       return <BidOpportunityPage />;
+    case 'delivery-docs':
+      return <DeliveryDocsPage onSectionChange={onSectionChange} />;
     case 'developer-test':
       return null;
     case 'developer-json-test':

@@ -25,6 +25,12 @@ interface OutlineEditPageProps {
   onOutlineConfigChange: (config: { referenceKnowledgeDocumentIds: string[]; outlineExpansionMode: OutlineExpansionMode; wordControlOptions: OutlineWordControlOptions }) => Promise<void>;
   onOutlineSaved: (request: SaveOutlineRequest) => Promise<void>;
   onSortGuardChange?: (guard: OutlineSortGuard | null) => void;
+  onGenerateOutline?: (payload: {
+    reference_knowledge_document_ids: string[];
+    outline_expansion_mode: OutlineExpansionMode;
+    word_control_options: OutlineWordControlOptions;
+    debug_force_outline_agent_repair?: boolean;
+  }) => Promise<unknown> | void;
 }
 
 interface OutlineSortGuard {
@@ -295,6 +301,7 @@ function OutlineEditPage({
   onOutlineConfigChange,
   onOutlineSaved,
   onSortGuardChange,
+  onGenerateOutline,
 }: OutlineEditPageProps) {
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
@@ -534,12 +541,17 @@ function OutlineEditPage({
         wordControlOptions,
       });
       setGenerationDialogOpen(false);
-      await window.yibiao?.tasks.startOutlineGeneration({
+      const outlinePayload = {
         reference_knowledge_document_ids: draftKnowledgeDocumentIds,
         outline_expansion_mode: nextOutlineExpansionMode,
         word_control_options: wordControlOptions,
         debug_force_outline_agent_repair: developerMode && draftForceOutlineAgentRepair,
-      });
+      };
+      if (onGenerateOutline) {
+        await onGenerateOutline(outlinePayload);
+      } else {
+        await window.yibiao?.tasks.startOutlineGeneration(outlinePayload);
+      }
       trackConfigUsage({
         outline_mode: isExpansionWorkflow ? nextOutlineExpansionMode : 'aligned',
         word_control_enabled: wordControlOptions.minimumWords > 0 || wordControlOptions.maximumWords > 0 || wordControlOptions.sectionWords > 0,

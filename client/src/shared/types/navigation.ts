@@ -11,6 +11,7 @@ export type SectionId =
   | 'duplicate-check'
   | 'rejection-check'
   | 'ai-evaluation'
+  | 'delivery-docs'
   | 'template-settings'
   | 'my-templates'
   | 'new-template'

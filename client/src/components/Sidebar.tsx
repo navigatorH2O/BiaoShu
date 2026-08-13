@@ -29,6 +29,7 @@ const navigationIcons: Record<SectionId, ComponentType<SVGProps<SVGSVGElement>>>
   'new-template': DocumentIcon,
   'export-format': DocumentIcon,
   'bid-opportunity': RadarIcon,
+  'delivery-docs': DocumentIcon,
   'developer-test': FlaskIcon,
   'developer-json-test': FlaskIcon,
   'developer-prompt-lab': FlaskIcon,

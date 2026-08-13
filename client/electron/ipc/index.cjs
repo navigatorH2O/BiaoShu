@@ -5,6 +5,7 @@ const { registerConfigIpc } = require('./configIpc.cjs');
 const { registerDeveloperIpc } = require('./developerIpc.cjs');
 const { registerDuplicateCheckIpc } = require('./duplicateCheckIpc.cjs');
 const { registerExportIpc } = require('./exportIpc.cjs');
+const { registerDeliveryDocsIpc } = require('./deliveryDocsIpc.cjs');
 const { registerFileIpc } = require('./fileIpc.cjs');
 const { registerKnowledgeBaseIpc } = require('./knowledgeBaseIpc.cjs');
 const { registerLicenseIpc } = require('./licenseIpc.cjs');
@@ -22,6 +23,8 @@ const { createDeveloperExpansionReplaceTestService } = require('../services/deve
 const { createDuplicateCheckService } = require('../services/duplicateCheckService.cjs');
 const { createDuplicateCheckStore } = require('../services/duplicateCheckStore.cjs');
 const { createExportService } = require('../services/exportService.cjs');
+const { createDeliveryDocsStore } = require('../services/deliveryDocsStore.cjs');
+const { createDeliveryDocsService } = require('../services/deliveryDocsService.cjs');
 const { createFileService } = require('../services/fileService.cjs');
 const { createKnowledgeBaseService } = require('../services/knowledgeBaseService.cjs');
 const { createKnowledgeBaseStore } = require('../services/knowledgeBaseStore.cjs');
@@ -221,6 +224,8 @@ function registerIpcHandlers({ app, mainWindow, checkAndDownloadUpdate, triggerU
   const agentService = createAgentService({ app, configStore, mainWindow, aiService, licenseService });
   const fileService = createFileService({ app, configStore });
   const exportService = createExportService({ configStore });
+  const deliveryDocsStore = createDeliveryDocsStore({ app });
+  const deliveryDocsService = createDeliveryDocsService({ app, configStore, aiService, fileService, exportService, deliveryDocsStore });
   const systemFontService = createSystemFontService();
   const databaseStatus = registerWorkspaceDatabaseStatusIpc({ mainWindow });
   let workspaceDatabaseStarted = false;
@@ -299,6 +304,7 @@ function registerIpcHandlers({ app, mainWindow, checkAndDownloadUpdate, triggerU
   registerAgentIpc({ agentService, mainWindow });
   registerFileIpc({ fileService });
   registerExportIpc({ exportService });
+  registerDeliveryDocsIpc({ deliveryDocsService });
   registerSystemFontIpc({ systemFontService });
   registerPluginIpc(ipcMain, app, {
     taskService: null,

@@ -46,6 +46,7 @@ const pageLabels = {
   'new-template': '模版设置 - 新建模板',
   'export-format': '模版设置 - 新建模板',
   'bid-opportunity': '投标机会',
+  'delivery-docs': '交付文档',
   'plugin-manager': '插件管理',
   'developer-test': '测试页',
   'developer-json-test': '测试页 - Json请求测试',
