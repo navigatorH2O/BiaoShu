@@ -132,7 +132,10 @@
         }
       ]
     },
-    "artifactName": "BiaoShu-${version}-${os}-${arch}.${ext}"
+    "artifactName": "BiaoShu-${version}-${os}-${arch}.${ext}",
+    "toolsets": {
+      "winCodeSign": "1.1.0"
+    }
   },
   "dependencies": {
     "@earendil-works/pi-ai": "0.80.10",
